@@ -376,94 +376,253 @@
             <input type="radio" name="question30" value="D">D) Reference the monitoring pod in a cluster initializer at the GKE cluster creation time<br><br>
             <div class="result"></div>
           </div>
-          <!-- <div class="question-container">
-            <b><p>Question 3: </p> </b>
-            <input type="radio" name="question3" value="A">A) <br><br>
-            <input type="radio" name="question3" value="B">B) <br><br>
-            <input type="radio" name="question3" value="C">C) <br><br>
-            <input type="radio" name="question3" value="D">D) <br><br>
+          <div class="question-container">
+            <b><p>Question 31: You want to send and consume Cloud Pub/Sub messages from your App Engine application. The Cloud Pub/Sub API is currently disabled. You will
+              use a service account to authenticate your application to the API. You want to make sure your application can use Cloud Pub/Sub. What should
+              you do?
+              </p> </b>
+            <input type="radio" name="question31" value="A">A) Enable the Cloud Pub/Sub API in the API Library on the GCP Console<br><br>
+            <input type="radio" name="question31" value="B">B) Rely on the automatic enablement of the Cloud Pub/Sub API when the Service Account accesses it<br><br>
+            <input type="radio" name="question31" value="C">C) Use Deployment Manager to deploy your application. Rely on the automatic enablement of all APIs used by the application being deployed.<br><br>
+            <input type="radio" name="question31" value="D">D)  Grant the App Engine Default service account the role of Cloud Pub/Sub Admin. Have your application enable the API on the first
+            connection to Cloud Pub/ Sub<br><br>
             <div class="result"></div>
           </div>
           <div class="question-container">
-            <b><p>Question 3: </p> </b>
-            <input type="radio" name="question3" value="A">A) <br><br>
-            <input type="radio" name="question3" value="B">B) <br><br>
-            <input type="radio" name="question3" value="C">C) <br><br>
-            <input type="radio" name="question3" value="D">D) <br><br>
+            <b><p>Question 32: You need to monitor resources that are distributed over different projects in Google Cloud Platform. You want to consolidate reporting under the
+              same Stackdriver
+              Monitoring dashboard. What should you do?</p> </b>
+            <input type="radio" name="question32" value="A">A) Use Shared VPC to connect all projects, and link Stackdriver to one of the projects<br><br>
+            <input type="radio" name="question32" value="B">B) For each project, create a Stackdriver account. In each project, create a service account for that project and grant it the role of Stackdriver
+            Account Editor in all other projects<br><br>
+            <input type="radio" name="question32" value="C">C) Configure a single Stackdriver account, and link all projects to the same account.<br><br>
+            <input type="radio" name="question32" value="D">D) Configure a single Stackdriver account for one of the projects. In Stackdriver, create a Group and add the other project names as criteria for
+            that Group<br><br>
             <div class="result"></div>
           </div>
           <div class="question-container">
-            <b><p>Question 3: </p> </b>
-            <input type="radio" name="question3" value="A">A) <br><br>
-            <input type="radio" name="question3" value="B">B) <br><br>
-            <input type="radio" name="question3" value="C">C) <br><br>
-            <input type="radio" name="question3" value="D">D) <br><br>
+            <b><p>Question 33: You are deploying an application to a Compute Engine VM in a managed instance group. The application must be running at all times, but only a
+              single instance of the VM should run per GCP project. How should you configure the instance group?
+              </p> </b>
+            <input type="radio" name="question33" value="A">A) Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.
+            <br><br>
+            <input type="radio" name="question33" value="B">B) Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 1.<br><br>
+            <input type="radio" name="question33" value="C">C) Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 2<br><br>
+            <input type="radio" name="question33" value="D">D) Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 2.<br><br>
             <div class="result"></div>
           </div>
           <div class="question-container">
-            <b><p>Question 3: </p> </b>
-            <input type="radio" name="question3" value="A">A) <br><br>
-            <input type="radio" name="question3" value="B">B) <br><br>
-            <input type="radio" name="question3" value="C">C) <br><br>
-            <input type="radio" name="question3" value="D">D) <br><br>
+            <b><p>Question 34: You want to verify the IAM users and roles assigned within a GCP project named my-project. What should you do?</p> </b>
+            <input type="radio" name="question34" value="A">A) Run gcloud iam roles list. Review the output section<br><br>
+            <input type="radio" name="question34" value="B">B) Run gcloud iam service-accounts list. Review the output section.<br><br>
+            <input type="radio" name="question34" value="C">C) Navigate to the project and then to the IAM section in the GCP Console. Review the members and roles.
+            <br><br>
+            <input type="radio" name="question34" value="D">D) Navigate to the project and then to the Roles section in the GCP Console. Review the roles and status<br><br>
             <div class="result"></div>
           </div>
           <div class="question-container">
-            <b><p>Question 3: </p> </b>
-            <input type="radio" name="question3" value="A">A) <br><br>
-            <input type="radio" name="question3" value="B">B) <br><br>
-            <input type="radio" name="question3" value="C">C) <br><br>
-            <input type="radio" name="question3" value="D">D) <br><br>
+            <b><p>Question 35: You need to create a new billing account and then link it with an existing Google Cloud Platform project. What should you do?</p> </b>
+            <input type="radio" name="question35" value="A">A) Verify that you are Project Billing Manager for the GCP project. Update the existing project to link it to the existing billing account.<br><br>
+            <input type="radio" name="question35" value="B">B) Verify that you are Project Billing Manager for the GCP project. Create a new billing account and link the new billing account to the existing
+            project.
+            <br><br>
+            <input type="radio" name="question35" value="C">C) Verify that you are Billing Administrator for the billing account. Create a new project and link the new project to the existing billing account<br><br>
+            <input type="radio" name="question35" value="D">D)  Verify that you are Billing Administrator for the billing account. Update the existing project to link it to the existing billing account.
+            <br><br>
             <div class="result"></div>
           </div>
           <div class="question-container">
-            <b><p>Question 3: </p> </b>
-            <input type="radio" name="question3" value="A">A) <br><br>
-            <input type="radio" name="question3" value="B">B) <br><br>
-            <input type="radio" name="question3" value="C">C) <br><br>
-            <input type="radio" name="question3" value="D">D) <br><br>
+            <b><p>Question 36: You have one project called proj-sa where you manage all your service accounts. You want to be able to use a service account from this project to
+              take snapshots of VMs running in another project called proj-vm. What should you do?</p> </b>
+            <input type="radio" name="question36" value="A">A) Download the private key from the service account, and add it to each VMs custom metadata.
+            <br><br>
+            <input type="radio" name="question36" value="B">B) Download the private key from the service account, and add the private key to each VM's SSH keys<br><br>
+            <input type="radio" name="question36" value="C">C) Grant the service account the IAM Role of Compute Storage Admin in the project called proj-vm.
+            <br><br>
+            <input type="radio" name="question36" value="D">D) When creating the VMs, set the service account's API scope for Compute Engine to read/write.
+            <br><br>
             <div class="result"></div>
           </div>
           <div class="question-container">
-            <b><p>Question 3: </p> </b>
-            <input type="radio" name="question3" value="A">A) <br><br>
-            <input type="radio" name="question3" value="B">B) <br><br>
-            <input type="radio" name="question3" value="C">C) <br><br>
-            <input type="radio" name="question3" value="D">D) <br><br>
+            <b><p>Question 37: You created a Google Cloud Platform project with an App Engine application inside the project. You initially configured the application to be served
+              from the us- central region. Now you want the application to be served from the asia-northeast1 region. What should you do? </p> </b>
+            <input type="radio" name="question37" value="A">A) Change the default region property setting in the existing GCP project to asia-northeast1.<br><br>
+            <input type="radio" name="question37" value="B">B) Change the region property setting in the existing App Engine application from us-central to asia-northeast1.<br><br>
+            <input type="radio" name="question37" value="C">C) Create a second App Engine application in the existing GCP project and specify asia-northeast1 as the region to serve your application.<br><br>
+            <input type="radio" name="question37" value="D">D) Create a new GCP project and create an App Engine application inside this new project. Specify asia-northeast1 as the region to serve your
+            application.<br><br>
             <div class="result"></div>
           </div>
           <div class="question-container">
-            <b><p>Question 3: </p> </b>
-            <input type="radio" name="question3" value="A">A) <br><br>
-            <input type="radio" name="question3" value="B">B) <br><br>
-            <input type="radio" name="question3" value="C">C) <br><br>
-            <input type="radio" name="question3" value="D">D) <br><br>
+            <b><p>Question 38: You need to grant access for three users so that they can view and edit table data on a Cloud Spanner instance. What should you do?
+            </p> </b>
+            <input type="radio" name="question38" value="A">A) Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to the role<br><br>
+            <input type="radio" name="question38" value="B">B) Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role<br><br>
+            <input type="radio" name="question38" value="C">C) Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to the role.
+            <br><br>
+            <input type="radio" name="question38" value="D">D) Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to a new group. Add the group to the role. <br><br>
             <div class="result"></div>
           </div>
           <div class="question-container">
-            <b><p>Question 3: </p> </b>
-            <input type="radio" name="question3" value="A">A) <br><br>
-            <input type="radio" name="question3" value="B">B) <br><br>
-            <input type="radio" name="question3" value="C">C) <br><br>
-            <input type="radio" name="question3" value="D">D) <br><br>
+            <b><p>Question 39: You create a new Google Kubernetes Engine (GKE) cluster and want to make sure that it always runs a supported and stable version of
+              Kubernetes. What should you do?</p> </b>
+            <input type="radio" name="question39" value="A">A) Enable the Node Auto-Repair feature for your GKE cluster.
+            <br><br>
+            <input type="radio" name="question39" value="B">B) Enable the Node Auto-Upgrades feature for your GKE cluster<br><br>
+            <input type="radio" name="question39" value="C">C) Select the latest available cluster version for your GKE cluster.
+            <br><br>
+            <input type="radio" name="question39" value="D">D) Select ג€Container-Optimized OS (cos)ג €as a node image for your GKE cluster<br><br>
             <div class="result"></div>
           </div>
           <div class="question-container">
-            <b><p>Question 3: </p> </b>
-            <input type="radio" name="question3" value="A">A) <br><br>
-            <input type="radio" name="question3" value="B">B) <br><br>
-            <input type="radio" name="question3" value="C">C) <br><br>
-            <input type="radio" name="question3" value="D">D) <br><br>
+            <b><p>Question 40: You have an instance group that you want to load balance. You want the load balancer to terminate the client SSL session. The instance group is
+              used to serve a public web application over HTTPS. You want to follow Google-recommended practices. What should you do?
+              </p> </b>
+            <input type="radio" name="question40" value="A">A)  Configure an HTTP(S) load balancer<br><br>
+            <input type="radio" name="question40" value="B">B)  Configure an internal TCP load balancer.
+            <br><br>
+            <input type="radio" name="question40" value="C">C) Configure an external SSL proxy load balancer.
+            <br><br>
+            <input type="radio" name="question40" value="D">D) Configure an external TCP proxy load balancer<br><br>
             <div class="result"></div>
           </div>
           <div class="question-container">
-            <b><p>Question 3: </p> </b>
-            <input type="radio" name="question3" value="A">A) <br><br>
-            <input type="radio" name="question3" value="B">B) <br><br>
-            <input type="radio" name="question3" value="C">C) <br><br>
-            <input type="radio" name="question3" value="D">D) <br><br>
+            <b><p>Question 41: You have 32 GB of data in a single file that you need to upload to a Nearline Storage bucket. The WAN connection you are using is rated at 1 Gbps,
+              and you are the only one on the connection. You want to use as much of the rated 1 Gbps as possible to transfer the file rapidly. How should you
+              upload the file?</p> </b>
+            <input type="radio" name="question41" value="A">A) Use the GCP Console to transfer the file instead of gsutil.
+            <br><br>
+            <input type="radio" name="question41" value="B">B) Enable parallel composite uploads using gsutil on the file transfer.
+            <br><br>
+            <input type="radio" name="question41" value="C">C) Decrease the TCP window size on the machine initiating the transfer.
+            <br><br>
+            <input type="radio" name="question41" value="D">D) Change the storage class of the bucket from Nearline to Multi-Regional.<br><br>
             <div class="result"></div>
-          </div> -->
+          </div>
+          <div class="question-container">
+            <b><p>Question 42: You've deployed a microservice called myapp1 to a Google Kubernetes Engine cluster using the YAML file specified below: <br><br>
+              <img src="q42.jpg" alt="" width="500px" height="300%"><br><br>
+              You need to refactor this configuration so that the database password is not stored in plain text. You want to follow Google-recommended
+              practices. What should you do?</p> </b>
+            
+            <input type="radio" name="question42" value="A">A)  Store the database password inside the Docker image of the container, not in the YAML file.
+            <br><br>
+            <input type="radio" name="question42" value="B">B) Store the database password inside a Secret object. Modify the YAML file to populate the DB_PASSWORD environment variable from the
+            Secret.
+            <br><br>
+            <input type="radio" name="question42" value="C">C) Store the database password inside a ConfigMap object. Modify the YAML file to populate the DB_PASSWORD environment variable from
+            the ConfigMap<br><br>
+            <input type="radio" name="question42" value="D">D) Store the database password in a file inside a Kubernetes persistent volume, and use a persistent volume claim to mount the volume to the
+            container.
+            <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 43: You are running an application on multiple virtual machines within a managed instance group and have autoscaling enabled. The autoscaling
+              policy is configured so that additional instances are added to the group if the CPU utilization of instances goes above 80%. VMs are added until
+              the instance group reaches its maximum limit of five VMs or until CPU utilization of instances lowers to 80%. The initial delay for HTTP health
+              checks against the instances is set to 30 seconds.
+              The virtual machine instances take around three minutes to become available for users. You observe that when the instance group autoscales, it
+              adds more instances then necessary to support the levels of end-user traffic. You want to properly maintain instance group sizes when
+              autoscaling. What should you do?
+              </p> </b>
+            <input type="radio" name="question43" value="A">A) Set the maximum number of instances to 1.<br><br>
+            <input type="radio" name="question43" value="B">B) Decrease the maximum number of instances to 3.<br><br>
+            <input type="radio" name="question43" value="C">C) Use a TCP health check instead of an HTTP health check.
+            <br><br>
+            <input type="radio" name="question43" value="D">D) . Increase the initial delay of the HTTP health check to 200 seconds.
+
+            <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 44: You need to select and configure compute resources for a set of batch processing jobs. These jobs take around 2 hours to complete and are run
+              nightly. You want to minimize service costs. What should you do?</p> </b>
+            <input type="radio" name="question44" value="A">A) Select Google Kubernetes Engine. Use a single-node cluster with a small instance type.
+            <br><br>
+            <input type="radio" name="question44" value="B">B) Select Google Kubernetes Engine. Use a three-node cluster with micro instance types.<br><br>
+            <input type="radio" name="question44" value="C">C) Select Compute Engine. Use preemptible VM instances of the appropriate standard machine type<br><br>
+            <input type="radio" name="question44" value="D">D) Select Compute Engine. Use VM instance types that support micro bursting<br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 45: You recently deployed a new version of an application to App Engine and then discovered a bug in the release. You need to immediately revert to
+              the prior version of the application. What should you do?</p> </b>
+            <input type="radio" name="question45" value="A">A) Run gcloud app restore<br><br>
+            <input type="radio" name="question45" value="B">B) On the App Engine page of the GCP Console, select the application that needs to be reverted and click Revert.
+            <br><br>
+            <input type="radio" name="question45" value="C">C) On the App Engine Versions page of the GCP Console, route 100% of the traffic to the previous version.<br><br>
+            <input type="radio" name="question45" value="D">D) Deploy the original version as a separate application. Then go to App Engine settings and split traffic between applications so that the
+            original version serves 100% of the requests.<br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 46: You deployed an App Engine application using gcloud app deploy, but it did not deploy to the intended project. You want to find out why this
+              happened and where the application deployed. What should you do?</p> </b>
+            <input type="radio" name="question46" value="A">A) Check the app.yaml file for your application and check project settings.<br><br>
+            <input type="radio" name="question46" value="B">B) Check the web-application.xml file for your application and check project settings.
+            <br><br>
+            <input type="radio" name="question46" value="C">C) Go to Deployment Manager and review settings for deployment of applications.
+            <br><br>
+            <input type="radio" name="question46" value="D">D) Go to Cloud Shell and run gcloud config list to review the Google Cloud configuration used for deployment.
+            <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 47: You want to configure 10 Compute Engine instances for availability when maintenance occurs. Your requirements state that these instances
+              should attempt to automatically restart if they crash. Also, the instances should be highly available including during system maintenance. What
+              should you do?
+              </p> </b>
+            <input type="radio" name="question47" value="A">A) Create an instance template for the instances. Set the 'Automatic Restart' to on. Set the 'On-host maintenance' to Migrate VM instance. Add
+            the instance template to an instance group.
+            <br><br>
+            <input type="radio" name="question47" value="B">B) Create an instance template for the instances. Set 'Automatic Restart' to off. Set 'On-host maintenance' to Terminate VM instances. Add the
+            instance template to an instance group.
+            <br><br>
+            <input type="radio" name="question47" value="C">C) Create an instance group for the instances. Set the 'Autohealing' health check to healthy (HTTP).
+            <br><br>
+            <input type="radio" name="question47" value="D">D) Create an instance group for the instance. Verify that the 'Advanced creation options' setting for 'do not retry machine creation' is set to off.
+            <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 48: You host a static website on Cloud Storage. Recently, you began to include links to PDF files on this site. Currently, when users click on the links to
+              these PDF files, their browsers prompt them to save the file onto their local system. Instead, you want the clicked PDF files to be displayed within
+              the browser window directly, without prompting the user to save the file locally. What should you do?
+              </p> </b>
+            <input type="radio" name="question48" value="A">A)  Enable Cloud CDN on the website frontend.
+            <br><br>
+            <input type="radio" name="question48" value="B">B) Enable 'Share publicly' on the PDF file objects<br><br>
+            <input type="radio" name="question48" value="C">C) Set Content-Type metadata to application/pdf on the PDF file objects<br><br>
+            <input type="radio" name="question48" value="D">D) Add a label to the storage bucket with a key of Content-Type and value of application/pdf.
+            <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 49: You have a virtual machine that is currently configured with 2 vCPUs and 4 GB of memory. It is running out of memory. You want to upgrade the
+              virtual machine to have 8 GB of memory. What should you do? </p> </b>
+            <input type="radio" name="question49" value="A">A)  Rely on live migration to move the workload to a machine with more memory.
+            <br><br>
+            <input type="radio" name="question49" value="B">B)  Use gcloud to add metadata to the VM. Set the key to required-memory-size and the value to 8 GB<br><br>
+            <input type="radio" name="question49" value="C">C) Stop the VM, change the machine type to n1-standard-8, and start the VM.<br><br>
+            <input type="radio" name="question49" value="D">D) Stop the VM, increase the memory to 8 GB, and start the VM<br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 50: You have production and test workloads that you want to deploy on Compute Engine. Production VMs need to be in a different subnet than the
+              test VMs. All the
+              VMs must be able to reach each other over Internal IP without creating additional routes. You need to set up VPC and the 2 subnets. Which
+              configuration meets these requirements?</p> </b>
+            <input type="radio" name="question50" value="A">A) Create a single custom VPC with 2 subnets. Create each subnet in a different region and with a different CIDR range.
+            <br><br>
+            <input type="radio" name="question50" value="B">B) Create a single custom VPC with 2 subnets. Create each subnet in the same region and with the same CIDR range.
+            <br><br>
+            <input type="radio" name="question50" value="C">C) Create 2 custom VPCs, each with a single subnet. Create each subnet in a different region and with a different CIDR range<br><br>
+            <input type="radio" name="question50" value="D">D) Create 2 custom VPCs, each with a single subnet. Create each subnet in the same region and with the same CIDR range<br><br>
+            <div class="result"></div>
+          </div>
+       
+        
         
         
         <input style="cursor: pointer;" class="submit-btn" type="submit" value="Submit">
