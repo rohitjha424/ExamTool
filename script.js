@@ -24,6 +24,16 @@ const correctAnswers = {
   'question18': "B",
   'question19': "A",
   'question20': "B",
+  'question21': "A",
+  'question22': "D",
+  'question23': "D",
+  'question24': "A",
+  'question25': "A",
+  'question26': "C",
+  'question27': "A",
+  'question28': "B",
+  'question29': "A",
+  'question30': "B",
   
 };
 

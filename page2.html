@@ -1,101 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GCP - Ques 51-100</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h3 class="mainHeading" >GCP EXAM</h3>
-  
-   
-  
-    
-  
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3 class="mainHeading">GCP EXAM</h3>
+
+    <div class="page-two">
       <form id="exam-form">
+        <div class="question-container">
+          <b
+            ><p>
+              Question 3:You want to select and configure a cost-effective
+              solution for relational data on Google Cloud Platform. You are
+              working with a small set of operational data in one geographic
+              location. You need to support point-in-time recovery. What should
+              you do?
+            </p>
+          </b>
+          <input type="radio" name="question3" value="A" />A) Select Cloud SQL
+          (MySQL). Verify that the enable binary logging option is selected<br /><br />
+          <input type="radio" name="question3" value="B" />B) Select Cloud SQL
+          (MySQL). Select the create failover replicas option.<br /><br />
+          <input type="radio" name="question3" value="C" />C) Select Cloud
+          Spanner. Set up your instance with 2 nodes.<br /><br />
+          <input type="radio" name="question3" value="D" />D) Select Cloud
+          Spanner. Set up your instance as multi-regional.<br /><br />
+          <div class="result"></div>
+        </div>
+
+        <div class="question-container">
+          <b
+            ><p>
+              Question 4: You want to configure autohealing for network load
+              balancing for a group of Compute Engine instances that run in
+              multiple zones, using the fewest possible steps. <br />
+              You need to configure re-creation of VMs if they are unresponsive
+              after 3 attempts of 10 seconds each. What should you do?
+            </p>
+          </b>
+          <input type="radio" name="question4" value="A" />A) Create an HTTP
+          load balancer with a backend configuration that references an existing
+          instance group. Set the health check to healthy (HTTP)<br /><br />
+          <input type="radio" name="question4" value="B" />B) Create an HTTP
+          load balancer with a backend configuration that references an existing
+          instance group. Define a balancing mode and set the maximum RPS to
+          10.<br /><br />
+          <input type="radio" name="question4" value="C" />C) Create a managed
+          instance group. Set the Autohealing health check to healthy (HTTP)<br /><br />
+          <input type="radio" name="question4" value="D" />D) Create a managed
+          instance group. Verify that the autoscaling setting is on<br /><br />
+          <div class="result"></div>
+        </div>
+
+        <!-- <div class="question-container">
+        <b><p>Question 2: What is the currency of Japan?</p> </b>
+        <input type="radio" name="question2" value="A">A) Yen<br>
+        <input type="radio" name="question2" value="B">B) Dollar<br>
+        <input type="radio" name="question2" value="C">C) Euro<br>
+        <input type="radio" name="question2" value="D">D) Pound<br>
+        <div class="result"></div>
+      </div> -->
+
+        <input class="submit-btn" type="submit" value="Submit2" />
+        <!-- <button style="padding: 16px 30px; background-color: black;  font-weight: bold; "><a href="#page2" style="text-decoration: none;color: white;">Que 51 to 100</a></button> -->
+      </form>
+    </div>
+
+    <div class="next-prev-btn" style="margin: 20px 0px;">
+
+      <div class="prev-btn" >
         
-          
-          <div class="question-container">
-            <b><p>Question 3:You want to select and configure a cost-effective solution for relational data on Google Cloud Platform. You are working with a small set of
-              operational data in one geographic location. You need to support point-in-time recovery. What should you do?
-              </p> </b>
-            <input type="radio" name="question3" value="A">A) Select Cloud SQL (MySQL). Verify that the enable binary logging option is selected<br><br>
-            <input type="radio" name="question3" value="B">B) Select Cloud SQL (MySQL). Select the create failover replicas option.<br><br>
-            <input type="radio" name="question3" value="C">C) Select Cloud Spanner. Set up your instance with 2 nodes.<br><br>
-            <input type="radio" name="question3" value="D">D) Select Cloud Spanner. Set up your instance as multi-regional.<br><br>
-            <div class="result"></div>
-          </div>
-          
-          <div class="question-container">
-            <b><p>Question 4: You want to configure autohealing for network load balancing for a group of Compute Engine instances that run in multiple zones, using the
-              fewest possible steps. <br>
-              You need to configure re-creation of VMs if they are unresponsive after 3 attempts of 10 seconds each. What should you do?</p> </b>
-            <input type="radio" name="question4" value="A">A) Create an HTTP load balancer with a backend configuration that references an existing instance group. Set the health check to healthy
-            (HTTP)<br><br>
-            <input type="radio" name="question4" value="B">B) Create an HTTP load balancer with a backend configuration that references an existing instance group. Define a balancing mode and set
-            the maximum RPS to 10.<br><br>
-            <input type="radio" name="question4" value="C">C) Create a managed instance group. Set the Autohealing health check to healthy (HTTP)<br><br>
-            <input type="radio" name="question4" value="D">D) Create a managed instance group. Verify that the autoscaling setting is on<br><br>
-            <div class="result"></div>
-          </div>
-          
-          <!-- <div class="question-container">
-            <b><p>Question 2: What is the currency of Japan?</p> </b>
-            <input type="radio" name="question2" value="A">A) Yen<br>
-            <input type="radio" name="question2" value="B">B) Dollar<br>
-            <input type="radio" name="question2" value="C">C) Euro<br>
-            <input type="radio" name="question2" value="D">D) Pound<br>
-            <div class="result"></div>
-          </div> -->
-          
-          
-          
-          <input class="submit-btn" type="submit" value="Submit2">
-          <!-- <button style="padding: 16px 30px; background-color: black;  font-weight: bold; "><a href="#page2" style="text-decoration: none;color: white;">Que 51 to 100</a></button> -->
-    </form>
-    
-  
-  <p class="correct"></p>
-  <p class="incorrect"></p>
+        <button  style="padding: 16px 30px; background-color: black;  font-weight: bold; color: white; cursor: pointer;" onclick="window.location.href = 'index.html';"> Que 1 to 50</a></button>
+    </div>
+    <div class="next-btn" >
+     
+      <button  style="padding: 16px 30px; background-color: black;  font-weight: bold; color: white; cursor: pointer;" onclick="window.location.href = 'page2.html';">Que 51 to 100</a></button>
+  </div>
+
+    </div>
+
+    <p class="correct"></p>
+    <p class="incorrect"></p>
   </body>
-  <script >
+  <script>
     const form = document.querySelector("#exam-form");
 
-const correctAnswers = {
+    const correctAnswers = {
+      question3: "A",
+      question4: "C",
+    };
 
-  'question3': "A",
-  'question4': "C",
-  
-};
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-form.addEventListener("submit", function(event) {
-  event.preventDefault();
+      let correct = 0;
+      let incorrect = 0;
 
-  let correct = 0;
-  let incorrect = 0;
+      const questionContainers = document.querySelectorAll(
+        ".question-container"
+      );
+      questionContainers.forEach((container) => {
+        const question = container.querySelector("input[type='radio']:checked");
+        const key = question.name;
+        const questionNumber = container
+          .querySelector("p")
+          .textContent.split(" ")[1];
+        const resultContainer = container.querySelector(".result");
 
-  const questionContainers = document.querySelectorAll(".question-container");
-  questionContainers.forEach(container => {
-    const question = container.querySelector("input[type='radio']:checked");
-    const key = question.name;
-    const questionNumber = container.querySelector("p").textContent.split(" ")[1];
-    const resultContainer = container.querySelector(".result");
+        if (!question) {
+          resultContainer.innerHTML = `<p style="color: red;">Please select an answer for question ${questionNumber}</p>`;
+        } else if (question.value == correctAnswers[key.toString()]) {
+          resultContainer.innerHTML = `<p style="color: green;">Correct!</p>`;
+          correct++;
+        } else {
+          resultContainer.innerHTML =
+            '<p style="color: red;">Incorrect. The correct answer was ' +
+            correctAnswers[key.toString()] +
+            "</p>";
+          incorrect++;
+        }
+      });
 
-    if (!question) {
-      resultContainer.innerHTML = `<p style="color: red;">Please select an answer for question ${questionNumber}</p>`;
-    } else if (question.value == correctAnswers[key.toString()]) {
-      resultContainer.innerHTML = `<p style="color: green;">Correct!</p>`;
-      correct++;
-    } else {
-      resultContainer.innerHTML = '<p style="color: red;">Incorrect. The correct answer was ' + correctAnswers[key.toString()] + '</p>';
-      incorrect++;
-    }
-  });
-
-  document.querySelector(".correct").innerHTML = `Correct: ${correct}`;
-  document.querySelector(".incorrect").innerHTML = `Incorrect: ${incorrect}`;
-});
+      document.querySelector(".correct").innerHTML = `Correct: ${correct}`;
+      document.querySelector(
+        ".incorrect"
+      ).innerHTML = `Incorrect: ${incorrect}`;
+    });
   </script>
 </html>

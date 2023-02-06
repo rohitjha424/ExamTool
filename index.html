@@ -8,8 +8,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h3 class="mainHeading" >GCP EXAM</h3>
+  <div>
+    <h3 class="mainHeading" >GCP EXAM</h3>
 
+  </div>
+
+
+  <!--Question Section starts -->
   <div id="page-one">
 
     <form id="exam-form">
@@ -250,22 +255,236 @@
             <br><br>
             <div class="result"></div>
           </div>
-          <!-- <div class="question-container">
-            <b><p>Question 1: </p> </b>
-            <input type="radio" name="question1" value="A">A) <br>
-            <input type="radio" name="question1" value="B">B) <br>
-            <input type="radio" name="question1" value="C">C) <br>
-            <input type="radio" name="question1" value="D">D) <br>
+          <div class="question-container">
+            <b><p>Question 21: You have one GCP account running in your default region and zone and another account running in a non-default region and zone. You want to
+              start a new
+              Compute Engine instance in these two Google Cloud Platform accounts using the command line interface. What should you do?
+              </p> </b>
+            <input type="radio" name="question21" value="A">A) Create two configurations using gcloud config configurations create [NAME]. Run gcloud config configurations activate [NAME] to switch
+            between accounts when running the commands to start the Compute Engine instances. <br><br>
+            <input type="radio" name="question21" value="B">B) Create two configurations using gcloud config configurations create [NAME]. Run gcloud configurations list to start the Compute Engine
+            instances.<br><br>
+            <input type="radio" name="question21" value="C">C) Activate two configurations using gcloud configurations activate [NAME]. Run gcloud config list to start the Compute Engine instances.
+            <br><br>
+            <input type="radio" name="question21" value="D">D) Activate two configurations using gcloud configurations activate [NAME]. Run gcloud configurations list to start the Compute Engine
+            instances.
+            <br><br>
             <div class="result"></div>
-          </div> -->
+          </div>
+          <div class="question-container">
+            <b><p>Question 22: You significantly changed a complex Deployment Manager template and want to confirm that the dependencies of all defined resources are
+              properly met before committing it to the project. You want the most rapid feedback on your changes. What should you do?</p> </b>
+            <input type="radio" name="question22" value="A">A) Use granular logging statements within a Deployment Manager template authored in Python. <br><br>
+            <input type="radio" name="question22" value="B">B) Monitor activity of the Deployment Manager execution on the Stackdriver Logging page of the GCP Console<br><br>
+            <input type="radio" name="question22" value="C">C) Execute the Deployment Manager template against a separate project with the same configuration, and monitor for failures <br><br>
+            <input type="radio" name="question22" value="D">D) Execute the Deployment Manager template using the ג-"€preview option in the same project, and observe the state of interdependent
+            resources.
+            <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 23: You are building a pipeline to process time-series data. Which Google Cloud Platform services should you put in boxes 1,2,3, and 4?
+            </p> </b>
+            <img src="q23.jpg" width="80%" height="50%" style="display: block;" alt=""><br>
+            <input type="radio" name="question23" value="A">A) Cloud Pub/Sub, Cloud Dataflow, Cloud Datastore, BigQuery<br><br>
+            <input type="radio" name="question23" value="B">B) Firebase Messages, Cloud Pub/Sub, Cloud Spanner, BigQuery <br><br>
+            <input type="radio" name="question23" value="C">C) Cloud Pub/Sub, Cloud Storage, BigQuery, Cloud Bigtable<br><br>
+            <input type="radio" name="question23" value="D">D) Cloud Pub/Sub, Cloud Dataflow, Cloud Bigtable, BigQuery
+            <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 24: You have a project for your App Engine application that serves a development environment. The required testing has succeeded and you want to
+              create a new project to serve as your production environment. What should you do? </p> </b>
+            <input type="radio" name="question2" value="A">A) Use gcloud to create the new project, and then deploy your application to the new project. <br><br>
+            <input type="radio" name="question2" value="B">B) Use gcloud to create the new project and to copy the deployed application to the new project.
+            <br><br>
+            <input type="radio" name="question2" value="C">C) Create a Deployment Manager configuration file that copies the current App Engine deployment into a new project<br><br>
+            <input type="radio" name="question2" value="D">D) Deploy your application again using gcloud and specify the project parameter with the new project name to create the new project.
+            <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 25: You need to configure IAM access audit logging in BigQuery for external auditors. You want to follow Google-recommended practices. What
+              should you do?</p> </b>
+            <input type="radio" name="question25" value="A">A) Add the auditors group to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles<br><br>
+            <input type="radio" name="question25" value="B">B) Add the auditors group to two new custom IAM roles.
+            <br><br>
+            <input type="radio" name="question25" value="C">C) Add the auditor user accounts to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.
+            <br><br>
+            <input type="radio" name="question25" value="D">D) Add the auditor user accounts to two new custom IAM roles.
+            <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 26: You need to set up permissions for a set of Compute Engine instances to enable them to write data into a particular Cloud Storage bucket. You
+              want to follow
+              Google-recommended practices. What should you do?</p> </b>
+            <input type="radio" name="question26" value="A">A) Create a service account with an access scope. Use the access scope 'https://www.googleapis.com/auth/devstorage.write_only'.<br><br>
+            <input type="radio" name="question26" value="B">B) Create a service account with an access scope. Use the access scope 'https://www.googleapis.com/auth/cloud-platform'.<br><br>
+            <input type="radio" name="question26" value="C">C) Create a service account and add it to the IAM role 'storage.objectCreator' for that bucket.
+            <br><br>
+            <input type="radio" name="question26" value="D">D) Create a service account and add it to the IAM role 'storage.objectAdmin' for that bucket.<br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 27: You have sensitive data stored in three Cloud Storage buckets and have enabled data access logging. You want to verify activities for a particular
+              user for these buckets, using the fewest possible steps. You need to verify the addition of metadata labels and which files have been viewed from
+              those buckets. What should you do?</p> </b>
+            <input type="radio" name="question27" value="A">A)  Using the GCP Console, filter the Activity log to view the information.
+            <br><br>
+            <input type="radio" name="question27" value="B">B) Using the GCP Console, filter the Stackdriver log to view the information.
+            <br><br>
+            <input type="radio" name="question27" value="C">C)  View the bucket in the Storage section of the GCP Console.
+            <br><br>
+            <input type="radio" name="question27" value="D">D) Create a trace in Stackdriver to view the information.<br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 28: You are the project owner of a GCP project and want to delegate control to colleagues to manage buckets and files in Cloud Storage. You want to
+              follow Google- recommended practices. Which IAM roles should you grant your colleagues?
+              </p> </b>
+            <input type="radio" name="question28" value="A">A) . Project Editor
+            <br><br>
+            <input type="radio" name="question28" value="B">B) Storage Admin <br><br>
+            <input type="radio" name="question28" value="C">C) Storage Object Admin<br><br>
+            <input type="radio" name="question28" value="D">D) Storage Object Creator
+            <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 29: You have an object in a Cloud Storage bucket that you want to share with an external company. The object contains sensitive data. You want
+              access to the content to be removed after four hours. The external company does not have a Google account to which you can grant specific userbased access privileges. You want to use the most secure method that requires the fewest steps. What should you do?
+              </p> </b>
+            <input type="radio" name="question29" value="A">A) Create a signed URL with a four-hour expiration and share the URL with the company<br><br>
+            <input type="radio" name="question29" value="B">B) Set object access to 'public' and use object lifecycle management to remove the object after four hours.
+            <br><br>
+            <input type="radio" name="question29" value="C">C) Configure the storage bucket as a static website and furnish the object's URL to the company. Delete the object from the storage bucket
+            after four hours<br><br>
+            <input type="radio" name="question29" value="D">D) Create a new Cloud Storage bucket specifically for the external company to access. Copy the object to that bucket. Delete the bucket after
+            four hours have passed.
+            <br><br>
+            <div class="result"></div>
+          </div>
+
+          <div class="question-container">
+            <b><p>Question 30: You are creating a Google Kubernetes Engine (GKE) cluster with a cluster autoscaler feature enabled. You need to make sure that each node of the
+              cluster will run a monitoring pod that sends container metrics to a third-party monitoring solution. What should you do?</p> </b>
+            <input type="radio" name="question3" value="A">A) Deploy the monitoring pod in a StatefulSet object.<br><br>
+            <input type="radio" name="question3" value="B">B) Deploy the monitoring pod in a DaemonSet object<br><br>
+            <input type="radio" name="question3" value="C">C) Reference the monitoring pod in a Deployment object.<br><br>
+            <input type="radio" name="question3" value="D">D) Reference the monitoring pod in a cluster initializer at the GKE cluster creation time<br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 3: </p> </b>
+            <input type="radio" name="question3" value="A">A) <br><br>
+            <input type="radio" name="question3" value="B">B) <br><br>
+            <input type="radio" name="question3" value="C">C) <br><br>
+            <input type="radio" name="question3" value="D">D) <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 3: </p> </b>
+            <input type="radio" name="question3" value="A">A) <br><br>
+            <input type="radio" name="question3" value="B">B) <br><br>
+            <input type="radio" name="question3" value="C">C) <br><br>
+            <input type="radio" name="question3" value="D">D) <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 3: </p> </b>
+            <input type="radio" name="question3" value="A">A) <br><br>
+            <input type="radio" name="question3" value="B">B) <br><br>
+            <input type="radio" name="question3" value="C">C) <br><br>
+            <input type="radio" name="question3" value="D">D) <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 3: </p> </b>
+            <input type="radio" name="question3" value="A">A) <br><br>
+            <input type="radio" name="question3" value="B">B) <br><br>
+            <input type="radio" name="question3" value="C">C) <br><br>
+            <input type="radio" name="question3" value="D">D) <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 3: </p> </b>
+            <input type="radio" name="question3" value="A">A) <br><br>
+            <input type="radio" name="question3" value="B">B) <br><br>
+            <input type="radio" name="question3" value="C">C) <br><br>
+            <input type="radio" name="question3" value="D">D) <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 3: </p> </b>
+            <input type="radio" name="question3" value="A">A) <br><br>
+            <input type="radio" name="question3" value="B">B) <br><br>
+            <input type="radio" name="question3" value="C">C) <br><br>
+            <input type="radio" name="question3" value="D">D) <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 3: </p> </b>
+            <input type="radio" name="question3" value="A">A) <br><br>
+            <input type="radio" name="question3" value="B">B) <br><br>
+            <input type="radio" name="question3" value="C">C) <br><br>
+            <input type="radio" name="question3" value="D">D) <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 3: </p> </b>
+            <input type="radio" name="question3" value="A">A) <br><br>
+            <input type="radio" name="question3" value="B">B) <br><br>
+            <input type="radio" name="question3" value="C">C) <br><br>
+            <input type="radio" name="question3" value="D">D) <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 3: </p> </b>
+            <input type="radio" name="question3" value="A">A) <br><br>
+            <input type="radio" name="question3" value="B">B) <br><br>
+            <input type="radio" name="question3" value="C">C) <br><br>
+            <input type="radio" name="question3" value="D">D) <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 3: </p> </b>
+            <input type="radio" name="question3" value="A">A) <br><br>
+            <input type="radio" name="question3" value="B">B) <br><br>
+            <input type="radio" name="question3" value="C">C) <br><br>
+            <input type="radio" name="question3" value="D">D) <br><br>
+            <div class="result"></div>
+          </div>
+          <div class="question-container">
+            <b><p>Question 3: </p> </b>
+            <input type="radio" name="question3" value="A">A) <br><br>
+            <input type="radio" name="question3" value="B">B) <br><br>
+            <input type="radio" name="question3" value="C">C) <br><br>
+            <input type="radio" name="question3" value="D">D) <br><br>
+            <div class="result"></div>
+          </div>
         
         
         <input style="cursor: pointer;" class="submit-btn" type="submit" value="Submit">
         <!-- <button  style="padding: 16px 30px; background-color: black;  font-weight: bold; "><a href="page2.html" style="text-decoration: none;color: white;">Que 51 to 100</a></button> -->
        
-        <button  style="padding: 16px 30px; background-color: black;  font-weight: bold; color: white; cursor: pointer;" onclick="window.location.href = 'page2.html';">Que 51 to 100</a></button>
-  </form>
+      </form>
+
+    </div>
+
+    <!-- Question section ends here -->
+
+     <!-- next and previous buttons -->
+    <div class="next-prev-btn" style="margin: 20px 0px;">
+
+     
+    <div class="next-btn" >
+     
+      <button  style="padding: 16px 30px; background-color: black;  font-weight: bold; color: white; cursor: pointer;" onclick="window.location.href = 'page2.html';">Que 51 to 100</a></button>
   </div>
+
+    </div>
 
  
 
