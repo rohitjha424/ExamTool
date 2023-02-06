@@ -779,6 +779,9 @@ What should you do?<br>
       );
       questionContainers.forEach((container) => {
         const question = container.querySelector("input[type='radio']:checked");
+        if(question==null){
+      alert("Please Attempt All Questions ")
+    }
         const key = question.name;
         const questionNumber = container
           .querySelector("p")
