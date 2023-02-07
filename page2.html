@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GCP - Ques 51-100</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   
   </head>
   <body>
     <h3 class="mainHeading">GCP EXAM</h3>
+
+    <div class="next-prev-btn" >
+
+      <div class="prev-btn" >
+        
+        <button  style="padding: 16px 30px; background-color: black;  font-weight: bold; color: white; cursor: pointer;" onclick="window.location.href = 'index.html';"> Que 1 to 50</a></button>
+    </div>
+    <div class="next-btn" >
+     
+      <button  style="padding: 16px 30px; background-color: black;  font-weight: bold; color: white; cursor: pointer;" onclick="window.location.href = 'page3.html';">Que 101 to 150</a></button>
+  </div>
+
+    </div>
 
     <div class="page-two">
       <form id="exam-form">
@@ -697,7 +709,7 @@ What should you do?<br>
       </form>
     </div>
 
-    <div class="next-prev-btn" style="margin: 20px 0px;">
+    <div class="next-prev-btn">
 
       <div class="prev-btn" >
         
@@ -712,6 +724,12 @@ What should you do?<br>
 
     <p class="correct"></p>
     <p class="incorrect"></p>
+    <button id="sticky-btn">Go to Top/Bottom</button>
+    <div >
+      <footer>
+        <p> <a href="https://linktr.ee/rohitjha424" target="_blank" style="font-weight: bold; color: blue; text-decoration: none;"> Developed By - Rohit Kumar Jha</a>  </p>
+      </footer>
+    </div>
   </body>
   <script>
     const form = document.querySelector("#exam-form");
@@ -782,7 +800,7 @@ What should you do?<br>
       questionContainers.forEach((container) => {
         const question = container.querySelector("input[type='radio']:checked");
         if(question==null){
-      alert("Please Attempt All Questions ")
+      alert("Please Attempt All Questions to Get the results !!!")
     }
         const key = question.name;
         const questionNumber = container
@@ -791,23 +809,48 @@ What should you do?<br>
         const resultContainer = container.querySelector(".result");
 
         if (!question) {
-          resultContainer.innerHTML = `<p style="color: red;">Please select an answer for question ${questionNumber}</p>`;
-        } else if (question.value == correctAnswers[key.toString()]) {
-          resultContainer.innerHTML = `<p style="color: green;">Correct!</p>`;
-          correct++;
-        } else {
-          resultContainer.innerHTML =
-            '<p style="color: red;">Incorrect. The correct answer was ' +
-            correctAnswers[key.toString()] +
-            "</p>";
-          incorrect++;
-        }
-      });
+      resultContainer.innerHTML = `<p style="color: red;">Please select an answer for question ${questionNumber}</p>`;
+    } else if (question.value == correctAnswers[key.toString()]) {
+      resultContainer.innerHTML = `<p style="color: green; font-weight:bold;">Correct!</p>`;
+      correct++;
+    } else {
+      resultContainer.innerHTML = '<p style="color: red; font-weight:bold;">Incorrect. The correct answer was ' + correctAnswers[key.toString()] + '</p>';
+      incorrect++;
+    }
+  });
 
       document.querySelector(".correct").innerHTML = `Correct: ${correct}`;
       document.querySelector(
         ".incorrect"
       ).innerHTML = `Incorrect: ${incorrect}`;
     });
+
+
+
+    const stickyBtn = document.querySelector('#sticky-btn');
+
+window.onscroll = function() {
+  if (window.pageYOffset > 50) {
+    stickyBtn.style.display = 'block';
+  } else {
+    stickyBtn.style.display = 'none';
+  }
+
+  if (window.pageYOffset === 0) {
+    stickyBtn.innerHTML = 'Go to Bottom';
+  } else if (window.pageYOffset + window.innerHeight >= document.body.offsetHeight) {
+    stickyBtn.innerHTML = 'Go to Top';
+  } else {
+    stickyBtn.innerHTML = 'Go to Bottom';
+  }
+};
+
+stickyBtn.addEventListener('click', function() {
+  if (stickyBtn.innerHTML === 'Go to Bottom') {
+    window.scrollTo(0, document.body.offsetHeight);
+  } else {
+    window.scrollTo(0, 0);
+  }
+});
   </script>
 </html>

@@ -67,7 +67,7 @@ form.addEventListener("submit", function(event) {
   questionContainers.forEach(container => {
     const question = container.querySelector("input[type='radio']:checked");
     if(question==null){
-      alert("Please Attempt All Questions ")
+      alert("Please Attempt All Questions to Get the results !!!")
     }
     const key = question.name;
     const questionNumber = container.querySelector("p").textContent.split(" ")[1];
@@ -76,10 +76,10 @@ form.addEventListener("submit", function(event) {
     if (!question) {
       resultContainer.innerHTML = `<p style="color: red;">Please select an answer for question ${questionNumber}</p>`;
     } else if (question.value == correctAnswers[key.toString()]) {
-      resultContainer.innerHTML = `<p style="color: green;">Correct!</p>`;
+      resultContainer.innerHTML = `<p style="color: green; font-weight:bold;">Correct!</p>`;
       correct++;
     } else {
-      resultContainer.innerHTML = '<p style="color: red;">Incorrect. The correct answer was ' + correctAnswers[key.toString()] + '</p>';
+      resultContainer.innerHTML = '<p style="color: red; font-weight:bold;">Incorrect. The correct answer was ' + correctAnswers[key.toString()] + '</p>';
       incorrect++;
     }
   });
@@ -87,5 +87,38 @@ form.addEventListener("submit", function(event) {
   document.querySelector(".correct").innerHTML = `Correct: ${correct}`;
   document.querySelector(".incorrect").innerHTML = `Incorrect: ${incorrect}`;
 });
+
+
+
+
+
+const stickyBtn = document.querySelector('#sticky-btn');
+
+window.onscroll = function() {
+  if (window.pageYOffset > 50) {
+    stickyBtn.style.display = 'block';
+  } else {
+    stickyBtn.style.display = 'none';
+  }
+
+  if (window.pageYOffset === 0) {
+    stickyBtn.innerHTML = 'Go to Bottom';
+  } else if (window.pageYOffset + window.innerHeight >= document.body.offsetHeight) {
+    stickyBtn.innerHTML = 'Go to Top';
+  } else {
+    stickyBtn.innerHTML = 'Go to Bottom';
+  }
+};
+
+stickyBtn.addEventListener('click', function() {
+  if (stickyBtn.innerHTML === 'Go to Bottom') {
+    window.scrollTo(0, document.body.offsetHeight);
+  } else {
+    window.scrollTo(0, 0);
+  }
+});
+
+
+
 
 
