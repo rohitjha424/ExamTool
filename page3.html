@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GCP - Ques 101-150</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h3 class="mainHeading">GCP EXAM</h3>
+
+    <div class="page-three">
+        <form id="exam-form">
+      
+        
+            
+      <div class="question-container">
+        <b><p>Question 101: You need to host an application on a Compute Engine instance in a project shared with other teams. You want to prevent the other teams from
+          accidentally causing downtime on that application. Which feature should you use?</p> </b>
+        <input type="radio" name="question101" value="A">A) Use a Shielded VM.<br><br>
+        <input type="radio" name="question101" value="B">B) Use a Preemptible VM.<br><br>
+        <input type="radio" name="question101" value="C">C) Use a sole-tenant node<br><br>
+        <input type="radio" name="question101" value="D">D) Enable deletion protection on the instance.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 102: Your organization needs to grant users access to query datasets in BigQuery but prevent them from accidentally deleting the datasets. You want a
+          solution that follows Google-recommended practices. What should you do?
+          </p> </b>
+        <input type="radio" name="question102" value="A">A) Add users to roles/bigquery user role only, instead of roles/bigquery dataOwner.<br><br>
+        <input type="radio" name="question102" value="B">B) Add users to roles/bigquery dataEditor role only, instead of roles/bigquery dataOwner<br><br>
+        <input type="radio" name="question102" value="C">C) Create a custom role by removing delete permissions, and add users to that role only<br><br>
+        <input type="radio" name="question102" value="D">D) Create a custom role by removing delete permissions. Add users to the group, and then add the group to the custom role<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 103: You have a developer laptop with the Cloud SDK installed on Ubuntu. The Cloud SDK was installed from the Google Cloud Ubuntu package
+          repository. You want to test your application locally on your laptop with Cloud Datastore. What should you do?
+          </p> </b>
+        <input type="radio" name="question103" value="A">A) Export Cloud Datastore data using gcloud datastore export.
+        <br><br>
+        <input type="radio" name="question103" value="B">B) Create a Cloud Datastore index using gcloud datastore indexes create.
+        <br><br>
+        <input type="radio" name="question103" value="C">C) Install the google-cloud-sdk-datastore-emulator component using the apt get install command<br><br>
+        <input type="radio" name="question103" value="D">D) Install the cloud-datastore-emulator component using the gcloud components install command<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 104: Your company set up a complex organizational structure on Google Cloud. The structure includes hundreds of folders and projects. Only a few
+          team members should be able to view the hierarchical structure. You need to assign minimum permissions to these team members, and you want
+          to follow Google-recommended practices. What should you do?</p> </b>
+        <input type="radio" name="question104" value="A">A) Add the users to roles/browser role.
+        <br><br>
+        <input type="radio" name="question104" value="B">B)  Add the users to roles/iam.roleViewer role<br><br>
+        <input type="radio" name="question104" value="C">C)  Add the users to a group, and add this group to roles/browser.
+        <br><br>
+        <input type="radio" name="question104" value="D">D) Add the users to a group, and add this group to roles/iam.roleViewer role.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 105: Your company has a single sign-on (SSO) identity provider that supports Security Assertion Markup Language (SAML) integration with service
+          providers. Your company has users in Cloud Identity. You would like users to authenticate using your company's SSO provider. What should you
+          do?
+          </p> </b>
+        <input type="radio" name="question105" value="A">A) In Cloud Identity, set up SSO with Google as an identity provider to access custom SAML apps<br><br>
+        <input type="radio" name="question105" value="B">B) In Cloud Identity, set up SSO with a third-party identity provider with Google as a service provider.
+        <br><br>
+        <input type="radio" name="question105" value="C">C) Obtain OAuth 2.0 credentials, configure the user consent screen, and set up OAuth 2.0 for Mobile & Desktop Apps.<br><br>
+        <input type="radio" name="question105" value="D">D) Obtain OAuth 2.0 credentials, configure the user consent screen, and set up OAuth 2.0 for Web Server Applications.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 106: Your organization has a dedicated person who creates and manages all service accounts for Google Cloud projects. You need to assign this
+          person the minimum role for projects. What should you do?
+          </p> </b>
+        <input type="radio" name="question106" value="A">A) Add the user to roles/iam.roleAdmin role.<br><br>
+        <input type="radio" name="question106" value="B">B) Add the user to roles/iam.securityAdmin role.<br><br>
+        <input type="radio" name="question106" value="C">C) Add the user to roles/iam.serviceAccountUser role.
+        <br><br>
+        <input type="radio" name="question106" value="D">D) Add the user to roles/iam.serviceAccountAdmin role.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 107: You are building an archival solution for your data warehouse and have selected Cloud Storage to archive your data. Your users need to be able to
+          access this archived data once a quarter for some regulatory requirements. You want to select a cost-efficient option. Which storage option
+          should you use?
+          </p> </b>
+        <input type="radio" name="question107" value="A">A) Cold Storage<br><br>
+        <input type="radio" name="question107" value="B">B) Nearline Storage<br><br>
+        <input type="radio" name="question107" value="C">C) Regional Storage
+        <br><br>
+        <input type="radio" name="question107" value="D">D)  Multi-Regional Storage<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 108: A team of data scientists infrequently needs to use a Google Kubernetes Engine (GKE) cluster that you manage. They require GPUs for some longrunning, non- restartable jobs. You want to minimize cost. What should you do?</p> </b>
+        <input type="radio" name="question108" value="A">A) Enable node auto-provisioning on the GKE cluster.
+        <br><br>
+        <input type="radio" name="question108" value="B">B) Create a VerticalPodAutscaler for those workloads.
+        <br><br>
+        <input type="radio" name="question108" value="C">C) Create a node pool with preemptible VMs and GPUs attached to those VMs.
+        <br><br>
+        <input type="radio" name="question108" value="D">D) Create a node pool of instances with GPUs, and enable autoscaling on this node pool with a minimum size of 1.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 109: Your organization has user identities in Active Directory. Your organization wants to use Active Directory as their source of truth for identities.
+          Your organization wants to have full control over the Google accounts used by employees for all Google services, including your Google Cloud
+          Platform (GCP) organization. What should you do?
+          </p> </b>
+        <input type="radio" name="question109" value="A">A) Use Google Cloud Directory Sync (GCDS) to synchronize users into Cloud Identity.
+        <br><br>
+        <input type="radio" name="question109" value="B">B) Use the cloud Identity APIs and write a script to synchronize users to Cloud Identity.<br><br>
+        <input type="radio" name="question109" value="C">C) Export users from Active Directory as a CSV and import them to Cloud Identity via the Admin Console.
+        <br><br>
+        <input type="radio" name="question109" value="D">D) Ask each employee to create a Google account using self signup. Require that each employee use their company email address and
+        password.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 110: You have successfully created a development environment in a project for an application. This application uses Compute Engine and Cloud SQL.
+          Now you need to create a production environment for this application. The security team has forbidden the existence of network routes between
+          these 2 environments and has asked you to follow Google-recommended practices. What should you do?</p> </b>
+        <input type="radio" name="question110" value="A">A)  Create a new project, enable the Compute Engine and Cloud SQL APIs in that project, and replicate the setup you have created in the
+        development environment.<br><br>
+        <input type="radio" name="question110" value="B">B) Create a new production subnet in the existing VPC and a new production Cloud SQL instance in your existing project, and deploy your
+        application using those resources.
+        <br><br>
+        <input type="radio" name="question110" value="C">C) Create a new project, modify your existing VPC to be a Shared VPC, share that VPC with your new project, and replicate the setup you have
+        in the development environment in that new project in the Shared VPC.<br><br>
+        <input type="radio" name="question110" value="D">D) Ask the security team to grant you the Project Editor role in an existing production project used by another division of your company. Once
+        they grant you that role, replicate the setup you have in the development environment in that project<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 111: Your management has asked an external auditor to review all the resources in a specific project. The security team has enabled the Organization
+          Policy called
+          Domain Restricted Sharing on the organization node by specifying only your Cloud Identity domain. You want the auditor to only be able to view,
+          but not modify, the resources in that project. What should you do?</p> </b>
+        <input type="radio" name="question111" value="A">A) Ask the auditor for their Google account, and give them the Viewer role on the project<br><br>
+        <input type="radio" name="question111" value="B">B) Ask the auditor for their Google account, and give them the Security Reviewer role on the project.
+        <br><br>
+        <input type="radio" name="question111" value="C">C) Create a temporary account for the auditor in Cloud Identity, and give that account the Viewer role on the project.<br><br>
+        <input type="radio" name="question111" value="D">D) Create a temporary account for the auditor in Cloud Identity, and give that account the Security Reviewer role on the project<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 112: You have a workload running on Compute Engine that is critical to your business. You want to ensure that the data on the boot disk of this
+          workload is backed up regularly. You need to be able to restore a backup as quickly as possible in case of disaster. You also want older backups
+          to be cleaned automatically to save on cost. You want to follow Google-recommended practices. What should you do?
+          </p> </b>
+        <input type="radio" name="question112" value="A">A) Create a Cloud Function to create an instance template<br><br>
+        <input type="radio" name="question112" value="B">B) Create a snapshot schedule for the disk using the desired interval.<br><br>
+        <input type="radio" name="question112" value="C">C) Create a cron job to create a new disk from the disk using gcloud.
+        <br><br>
+        <input type="radio" name="question112" value="D">D) Create a Cloud Task to create an image and export it to Cloud Storage.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 113: You need to assign a Cloud Identity and Access Management (Cloud IAM) role to an external auditor. The auditor needs to have permissions to
+          review your
+          Google Cloud Platform (GCP) Audit Logs and also to review your Data Access logs. What should you do?</p> </b>
+        <input type="radio" name="question113" value="A">A) Assign the auditor the IAM role roles/logging.privateLogViewer. Perform the export of logs to Cloud Storage.<br><br>
+        <input type="radio" name="question113" value="B">B) Assign the auditor the IAM role roles/logging.privateLogViewer. Direct the auditor to also review the logs for changes to Cloud IAM policy.
+        <br><br>
+        <input type="radio" name="question113" value="C">C) Assign the auditor's IAM user to a custom role that has logging.privateLogEntries.list permission. Perform the export of logs to Cloud
+        Storage.<br><br>
+        <input type="radio" name="question113" value="D">D) Assign the auditor's IAM user to a custom role that has logging.privateLogEntries.list permission. Direct the auditor to also review the logs
+        for changes to Cloud IAM policy.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 114: You are managing several Google Cloud Platform (GCP) projects and need access to all logs for the past 60 days. You want to be able to explore
+          and quickly analyze the log contents. You want to follow Google-recommended practices to obtain the combined logs for all projects. What should
+          you do?
+          </p> </b>
+        <input type="radio" name="question114" value="A">A) Navigate to Stackdriver Logging and select resource.labels.project_id="*"
+        <br><br>
+        <input type="radio" name="question114" value="B">B) Create a Stackdriver Logging Export with a Sink destination to a BigQuery dataset. Configure the table expiration to 60 days.
+        <br><br>
+        <input type="radio" name="question114" value="C">C) Create a Stackdriver Logging Export with a Sink destination to Cloud Storage. Create a lifecycle rule to delete objects after 60 days.
+        <br><br>
+        <input type="radio" name="question114" value="D">D) Configure a Cloud Scheduler job to read from Stackdriver and store the logs in BigQuery. Configure the table expiration to 60 days.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 115: You need to reduce GCP service costs for a division of your company using the fewest possible steps. You need to turn off all configured services
+          in an existing
+          GCP project. What should you do?</p> </b>
+        <input type="radio" name="question115" value="A">A) 1. Verify that you are assigned the Project Owners IAM role for this project. 2. Locate the project in the GCP console, click Shut down and
+        then enter the project ID.
+        <br><br>
+        <input type="radio" name="question115" value="B">B) 1. Verify that you are assigned the Project Owners IAM role for this project. 2. Switch to the project in the GCP console, locate the resources
+        and delete them.
+        <br><br>
+        <input type="radio" name="question115" value="C">C) 1. Verify that you are assigned the Organizational Administrator IAM role for this project. 2. Locate the project in the GCP console, enter the
+        project ID and then click Shut down.<br><br>
+        <input type="radio" name="question115" value="D">D) 1. Verify that you are assigned the Organizational Administrators IAM role for this project. 2. Switch to the project in the GCP console,
+        locate the resources and delete them.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 116: You are configuring service accounts for an application that spans multiple projects. Virtual machines (VMs) running in the web-applications
+          project need access to BigQuery datasets in crm-databases-proj. You want to follow Google-recommended practices to give access to the service
+          account in the web-applications project. What should you do?
+          </p> </b>
+        <input type="radio" name="question116" value="A">A) Give ג€project ownerג €for web-applications appropriate roles to crm-databases-proj.
+        <br><br>
+        <input type="radio" name="question116" value="B">B) Give ג€project ownerג €role to crm-databases-proj and the web-applications project<br><br>
+        <input type="radio" name="question116" value="C">C) Give ג€project ownerג €role to crm-databases-proj and bigquery.dataViewer role to web-applications.
+        <br><br>
+        <input type="radio" name="question116" value="D">D) Give bigquery.dataViewer role to crm-databases-proj and appropriate roles to web-applications.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 117: An employee was terminated, but their access to Google Cloud was not removed until 2 weeks later. You need to find out this employee accessed
+          any sensitive customer information after their termination. What should you do?
+          </p> </b>
+        <input type="radio" name="question117" value="A">A) View System Event Logs in Cloud Logging. Search for the user's email as the principal.
+        <br><br>
+        <input type="radio" name="question117" value="B">B) View System Event Logs in Cloud Logging. Search for the service account associated with the user<br><br>
+        <input type="radio" name="question117" value="C">C) View Data Access audit logs in Cloud Logging. Search for the user's email as the principal.
+        <br><br>
+        <input type="radio" name="question117" value="D">D) View the Admin Activity log in Cloud Logging. Search for the service account associated with the user.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 118: You need to create a custom IAM role for use with a GCP service. All permissions in the role must be suitable for production use. You also want to
+          clearly share with your organization the status of the custom role. This will be the first version of the custom role. What should you do?</p> </b>
+        <input type="radio" name="question118" value="A">A) Use permissions in your role that use the 'supported' support level for role permissions. Set the role stage to ALPHA while testing the role
+        permissions.<br><br>
+        <input type="radio" name="question118" value="B">B) Use permissions in your role that use the 'supported' support level for role permissions. Set the role stage to BETA while testing the role
+        permissions.
+        <br><br>
+        <input type="radio" name="question118" value="C">C) Use permissions in your role that use the 'testing' support level for role permissions. Set the role stage to ALPHA while testing the role
+        permissions.<br><br>
+        <input type="radio" name="question118" value="D">D) Use permissions in your role that use the 'testing' support level for role permissions. Set the role stage to BETA while testing the role
+        permissions.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 119: Your company has a large quantity of unstructured data in different file formats. You want to perform ETL transformations on the data. You need
+          to make the data accessible on Google Cloud so it can be processed by a Dataflow job. What should you do?</p> </b>
+        <input type="radio" name="question119" value="A">A) Upload the data to BigQuery using the bq command line tool.
+        <br><br>
+        <input type="radio" name="question119" value="B">B) Upload the data to Cloud Storage using the gsutil command line tool.
+        <br><br>
+        <input type="radio" name="question119" value="C">C) Upload the data into Cloud SQL using the import function in the console<br><br>
+        <input type="radio" name="question119" value="D">D) Upload the data into Cloud Spanner using the import function in the console<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 120: You need to manage multiple Google Cloud projects in the fewest steps possible. You want to configure the Google Cloud SDK command line
+          interface (CLI) so that you can easily manage multiple projects. What should you do?
+          </p> </b>
+        <input type="radio" name="question120" value="A">A) 1. Create a configuration for each project you need to manage. 2. Activate the appropriate configuration when you work with each of your
+        assigned Google Cloud projects.<br><br>
+        <input type="radio" name="question120" value="B">B) 1. Create a configuration for each project you need to manage. 2. Use gcloud init to update the configuration values when you need to work
+        with a non-default project<br><br>
+        <input type="radio" name="question120" value="C">C) 1. Use the default configuration for one project you need to manage. 2. Activate the appropriate configuration when you work with each of
+        your assigned Google Cloud projects.<br><br>
+        <input type="radio" name="question120" value="D">D) 1. Use the default configuration for one project you need to manage. 2. Use gcloud init to update the configuration values when you need to
+        work with a non-default project.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 121: Your managed instance group raised an alert stating that new instance creation has failed to create new instances. You need to maintain the
+          number of running instances specified by the template to be able to process expected application traffic. What should you do?
+          </p> </b>
+        <input type="radio" name="question121" value="A">A) Create an instance template that contains valid syntax which will be used by the instance group. Delete any persistent disks with the same
+        name as instance names.
+        <br><br>
+        <input type="radio" name="question121" value="B">B) Create an instance template that contains valid syntax that will be used by the instance group. Verify that the instance name and persistent
+        disk name values are not the same in the template.<br><br>
+        <input type="radio" name="question121" value="C">C) Verify that the instance template being used by the instance group contains valid syntax. Delete any persistent disks with the same name
+        as instance names. Set the disks.autoDelete property to true in the instance template.<br><br>
+        <input type="radio" name="question121" value="D">D) Delete the current instance template and replace it with a new instance template. Verify that the instance name and persistent disk name
+        values are not the same in the template. Set the disks.autoDelete property to true in the instance template.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 122: Your company is moving from an on-premises environment to Google Cloud. You have multiple development teams that use Cassandra
+          environments as backend databases. They all need a development environment that is isolated from other Cassandra instances. You want to
+          move to Google Cloud quickly and with minimal support effort. What should you do?
+          </p> </b>
+        <input type="radio" name="question122" value="A">A) 1. Build an instruction guide to install Cassandra on Google Cloud. 2. Make the instruction guide accessible to your developers.
+        <br><br>
+        <input type="radio" name="question122" value="B">B) 1. Advise your developers to go to Cloud Marketplace. 2. Ask the developers to launch a Cassandra image for their development work.<br><br>
+        <input type="radio" name="question122" value="C">C) 1. Build a Cassandra Compute Engine instance and take a snapshot of it. 2. Use the snapshot to create instances for your developers.
+        <br><br>
+        <input type="radio" name="question122" value="D">D) 1. Build a Cassandra Compute Engine instance and take a snapshot of it. 2. Upload the snapshot to Cloud Storage and make it accessible
+        to your developers. 3. Build instructions to create a Compute Engine instance from the snapshot so that developers can do it themselves.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 123: You have a Compute Engine instance hosting a production application. You want to receive an email if the instance consumes more than 90% of
+          its CPU resources for more than 15 minutes. You want to use Google services. What should you do?
+          </p> </b>
+        <input type="radio" name="question123" value="A">A) 1. Create a consumer Gmail account. 2. Write a script that monitors the CPU usage. 3. When the CPU usage exceeds the threshold, have
+        that script send an email using the Gmail account and smtp.gmail.com on port 25 as SMTP server.
+        <br><br>
+        <input type="radio" name="question123" value="B">B) 1. Create a Stackdriver Workspace, and associate your Google Cloud Platform (GCP) project with it. 2. Create an Alerting Policy in
+        Stackdriver that uses the threshold as a trigger condition. 3. Configure your email address in the notification channel.<br><br>
+        <input type="radio" name="question123" value="C">C) 1. Create a Stackdriver Workspace, and associate your GCP project with it. 2. Write a script that monitors the CPU usage and sends it as a
+        custom metric to Stackdriver. 3. Create an uptime check for the instance in Stackdriver<br><br>
+        <input type="radio" name="question123" value="D">D) 1. In Stackdriver Logging, create a logs-based metric to extract the CPU usage by using this regular expression: CPU Usage: ([0-9] {1,3})% 2.
+        In Stackdriver Monitoring, create an Alerting Policy based on this metric. 3. Configure your email address in the notification channel.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 124: You have an application that uses Cloud Spanner as a backend database. The application has a very predictable traffic pattern. You want to
+          automatically scale up or down the number of Spanner nodes depending on traffic. What should you do?
+          </p> </b>
+        <input type="radio" name="question124" value="A">A) Create a cron job that runs on a scheduled basis to review Cloud Monitoring metrics, and then resize the Spanner instance accordingly.
+        <br><br>
+        <input type="radio" name="question124" value="B">B) Create a Cloud Monitoring alerting policy to send an alert to oncall SRE emails when Cloud Spanner CPU exceeds the threshold. SREs would
+        scale resources up or down accordingly<br><br>
+        <input type="radio" name="question124" value="C">C) Create a Cloud Monitoring alerting policy to send an alert to Google Cloud Support email when Cloud Spanner CPU exceeds your threshold.
+        Google support would scale resources up or down accordingly.
+        <br><br>
+        <input type="radio" name="question124" value="D">D) Create a Cloud Monitoring alerting policy to send an alert to webhook when Cloud Spanner CPU is over or under your threshold. Create a
+        Cloud Function that listens to HTTP and resizes Spanner resources accordingly.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 125: Your company publishes large files on an Apache web server that runs on a Compute Engine instance. The Apache web server is not the only
+          application running in the project. You want to receive an email when the egress network costs for the server exceed 100 dollars for the current
+          month as measured by Google Cloud.
+          What should you do?</p> </b>
+        <input type="radio" name="question125" value="A">A) Set up a budget alert on the project with an amount of 100 dollars, a threshold of 100%, and notification type of ג€email.ג€
+        <br><br>
+        <input type="radio" name="question125" value="B">B) Set up a budget alert on the billing account with an amount of 100 dollars, a threshold of 100%, and notification type of ג€email.ג€<br><br>
+        <input type="radio" name="question125" value="C">C) Export the billing data to BigQuery. Create a Cloud Function that uses BigQuery to sum the egress network costs of the exported billing data
+        for the Apache web server for the current month and sends an email if it is over 100 dollars. Schedule the Cloud Function using Cloud
+        Scheduler to run hourly.
+        <br><br>
+        <input type="radio" name="question125" value="D">D) Use the Cloud Logging Agent to export the Apache web server logs to Cloud Logging. Create a Cloud Function that uses BigQuery to parse
+        the HTTP response log data in Cloud Logging for the current month and sends an email if the size of all HTTP responses, multiplied by current
+        Google Cloud egress prices, totals over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 126: You have designed a solution on Google Cloud that uses multiple Google Cloud products. Your company has asked you to estimate the costs of
+          the solution. You need to provide estimates for the monthly total cost. What should you do?</p> </b>
+        <input type="radio" name="question126" value="A">A) For each Google Cloud product in the solution, review the pricing details on the products pricing page. Use the pricing calculator to total the
+        monthly costs for each Google Cloud product.
+        <br><br>
+        <input type="radio" name="question126" value="B">B) For each Google Cloud product in the solution, review the pricing details on the products pricing page. Create a Google Sheet that
+        summarizes the expected monthly costs for each product.<br><br>
+        <input type="radio" name="question126" value="C">C) Provision the solution on Google Cloud. Leave the solution provisioned for 1 week. Navigate to the Billing Report page in the Cloud
+        Console. Multiply the 1 week cost to determine the monthly costs.<br><br>
+        <input type="radio" name="question126" value="D">D) Provision the solution on Google Cloud. Leave the solution provisioned for 1 week. Use Cloud Monitoring to determine the provisioned and
+        used resource amounts. Multiply the 1 week cost to determine the monthly costs.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 127: You have an application that receives SSL-encrypted TCP traffic on port 443. Clients for this application are located all over the world. You want to
+          minimize latency for the clients. Which load balancing option should you use?</p> </b>
+        <input type="radio" name="question127" value="A">A) HTTPS Load Balancer<br><br>
+        <input type="radio" name="question127" value="B">B) Network Load Balancer<br><br>
+        <input type="radio" name="question127" value="C">C) SSL Proxy Load Balancer<br><br>
+        <input type="radio" name="question127" value="D">D) Internal TCP/UDP Load Balancer. Add a firewall rule allowing ingress traffic from 0.0.0.0/0 on the target instances.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 128: You have an application on a general-purpose Compute Engine instance that is experiencing excessive disk read throttling on its Zonal SSD
+          Persistent Disk. The application primarily reads large files from disk. The disk size is currently 350 GB. You want to provide the maximum amount
+          of throughput while minimizing costs.
+          <br>What should you do?<br></p> </b>
+        <input type="radio" name="question128" value="A">A) Increase the size of the disk to 1 TB.
+        <br><br>
+        <input type="radio" name="question128" value="B">B) Increase the allocated CPU to the instance<br><br>
+        <input type="radio" name="question128" value="C">C) Migrate to use a Local SSD on the instance.
+        <br><br>
+        <input type="radio" name="question128" value="D">D) Migrate to use a Regional SSD on the instance.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 129: Your Dataproc cluster runs in a single Virtual Private Cloud (VPC) network in a single subnet with range 172.16.20.128/25. There are no private IP
+          addresses available in the VPC network. You want to add new VMs to communicate with your cluster using the minimum number of steps. What
+          should you do?
+          </p> </b>
+        <input type="radio" name="question129" value="A">A) Modify the existing subnet range to 172.16.20.0/24.<br><br>
+        <input type="radio" name="question129" value="B">B) Create a new Secondary IP Range in the VPC and configure the VMs to use that range.
+        <br><br>
+        <input type="radio" name="question129" value="C">C) Create a new VPC network for the VMs. Enable VPC Peering between the VMs' VPC network and the Dataproc cluster VPC network.
+        <br><br>
+        <input type="radio" name="question129" value="D">D) Create a new VPC network for the VMs with a subnet of 172.32.0.0/16. Enable VPC network Peering between the Dataproc VPC network
+        and the VMs VPC network. Configure a custom Route exchange.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 130: You manage an App Engine Service that aggregates and visualizes data from BigQuery. The application is deployed with the default App Engine
+          Service account. <br>
+          The data that needs to be visualized resides in a different project managed by another team. You do not have access to this project, but you want
+          your application to be able to read data from the BigQuery dataset. What should you do?
+          </p> </b>
+        <input type="radio" name="question130" value="A">A) Ask the other team to grant your default App Engine Service account the role of BigQuery Job User<br><br>
+        <input type="radio" name="question130" value="B">B) Ask the other team to grant your default App Engine Service account the role of BigQuery Data Viewer.
+        <br><br>
+        <input type="radio" name="question130" value="C">C) In Cloud IAM of your project, ensure that the default App Engine service account has the role of BigQuery Data Viewer.
+        <br><br>
+        <input type="radio" name="question130" value="D">D) In Cloud IAM of your project, grant a newly created service account from the other team the role of BigQuery Job User in your project.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 131: You need to create a copy of a custom Compute Engine virtual machine (VM) to facilitate an expected increase in application traffic due to a
+          business acquisition. <br>
+          What should you do?</p> </b>
+        <input type="radio" name="question131" value="A">A) Create a Compute Engine snapshot of your base VM. Create your images from that snapshot.
+        <br><br>
+        <input type="radio" name="question131" value="B">B) Create a Compute Engine snapshot of your base VM. Create your instances from that snapshot<br><br>
+        <input type="radio" name="question131" value="C">C) Create a custom Compute Engine image from a snapshot. Create your images from that image.
+        <br><br>
+        <input type="radio" name="question131" value="D">D) Create a custom Compute Engine image from a snapshot. Create your instances from that image.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 132: You have deployed an application on a single Compute Engine instance. The application writes logs to disk. Users start reporting errors with the
+          application. You want to diagnose the problem. What should you do?
+          </p> </b>
+        <input type="radio" name="question132" value="A">A) Navigate to Cloud Logging and view the application logs.
+        <br><br>
+        <input type="radio" name="question132" value="B">B) Connect to the instance's serial console and read the application logs.
+        <br><br>
+        <input type="radio" name="question132" value="C">C) Configure a Health Check on the instance and set a Low Healthy Threshold value.<br><br>
+        <input type="radio" name="question132" value="D">D) Install and configure the Cloud Logging Agent and view the logs from Cloud Logging.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 133: An application generates daily reports in a Compute Engine virtual machine (VM). The VM is in the project corp-iot-insights. Your team operates
+          only in the project corp-aggregate-reports and needs a copy of the daily exports in the bucket corp-aggregate-reports-storage. You want to
+          configure access so that the daily reports from the VM are available in the bucket corp-aggregate-reports-storage and use as few steps as
+          possible while following Google-recommended practices. What should you do?</p> </b>
+        <input type="radio" name="question133" value="A">A) Move both projects under the same folder.<br><br>
+        <input type="radio" name="question133" value="B">B) Grant the VM Service Account the role Storage Object Creator on corp-aggregate-reports-storage.<br><br>
+        <input type="radio" name="question133" value="C">C) Create a Shared VPC network between both projects. Grant the VM Service Account the role Storage Object Creator on corp-iot-insights.
+        <br><br>
+        <input type="radio" name="question133" value="D">D) Make corp-aggregate-reports-storage public and create a folder with a pseudo-randomized suffix name. Share the folder with the IoT team.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 134: You built an application on your development laptop that uses Google Cloud services. Your application uses Application Default Credentials for
+          authentication and works fine on your development laptop. You want to migrate this application to a Compute Engine virtual machine (VM) and set
+          up authentication using Google- recommended practices and minimal changes. What should you do?
+          </p> </b>
+        <input type="radio" name="question134" value="A">A) Assign appropriate access for Google services to the service account used by the Compute Engine VM.<br><br>
+        <input type="radio" name="question134" value="B">B) Create a service account with appropriate access for Google services, and configure the application to use this account.<br><br>
+        <input type="radio" name="question134" value="C">C) Store credentials for service accounts with appropriate access for Google services in a config file, and deploy this config file with your
+        application.<br><br>
+        <input type="radio" name="question134" value="D">D) Store credentials for your user account with appropriate access for Google services in a config file, and deploy this config file with your
+        application.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 135: You need to create a Compute Engine instance in a new project that doesn't exist yet. What should you do?</p> </b>
+        <input type="radio" name="question135" value="A">A) Using the Cloud SDK, create a new project, enable the Compute Engine API in that project, and then create the instance specifying your new
+        project.
+        <br><br>
+        <input type="radio" name="question135" value="B">B) Enable the Compute Engine API in the Cloud Console, use the Cloud SDK to create the instance, and then use the --project flag to specify a
+        new project<br><br>
+        <input type="radio" name="question135" value="C">C) Using the Cloud SDK, create the new instance, and use the --project flag to specify the new project. Answer yes when prompted by Cloud
+        SDK to enable the Compute Engine API.
+        <br><br>
+        <input type="radio" name="question135" value="D">D) Enable the Compute Engine API in the Cloud Console. Go to the Compute Engine section of the Console to create a new instance, and look
+        for the Create In A New Project option in the creation form.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 136: Your company runs one batch process in an on-premises server that takes around 30 hours to complete. The task runs monthly, can be performed
+          offline, and must be restarted if interrupted. You want to migrate this workload to the cloud while minimizing cost. What should you do?
+          </p> </b>
+        <input type="radio" name="question136" value="A">A) Migrate the workload to a Compute Engine Preemptible VM<br><br>
+        <input type="radio" name="question136" value="B">B) Migrate the workload to a Google Kubernetes Engine cluster with Preemptible nodes.<br><br>
+        <input type="radio" name="question136" value="C">C) Migrate the workload to a Compute Engine VM. Start and stop the instance as needed.
+        <br><br>
+        <input type="radio" name="question136" value="D">D) Create an Instance Template with Preemptible VMs On. Create a Managed Instance Group from the template and adjust Target CPU
+        Utilization. Migrate the workload.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 137: You are developing a new application and are looking for a Jenkins installation to build and deploy your source code. You want to automate the
+          installation as quickly and easily as possible. What should you do?</p> </b>
+        <input type="radio" name="question137" value="A">A) Deploy Jenkins through the Google Cloud Marketplace<br><br>
+        <input type="radio" name="question137" value="B">B) Create a new Compute Engine instance. Run the Jenkins executable<br><br>
+        <input type="radio" name="question137" value="C">C) Create a new Kubernetes Engine cluster. Create a deployment for the Jenkins image.<br><br>
+        <input type="radio" name="question137" value="D">D) Create an instance template with the Jenkins executable. Create a managed instance group with this template.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 138: You have downloaded and installed the gcloud command line interface (CLI) and have authenticated with your Google Account. Most of your
+          Compute Engine instances in your project run in the europe-west1-d zone. You want to avoid having to specify this zone with each CLI command
+          when managing these instances. <br>
+          What should you do?
+          </p> </b>
+        <input type="radio" name="question138" value="A">A) Set the europe-west1-d zone as the default zone using the gcloud config subcommand.<br><br>
+        <input type="radio" name="question138" value="B">B) In the Settings page for Compute Engine under Default location, set the zone to europeג"€west1-d.<br><br>
+        <input type="radio" name="question138" value="C">C) In the CLI installation directory, create a file called default.conf containing zone=europeג"€west1ג"€d<br><br>
+        <input type="radio" name="question138" value="D">D) Create a Metadata entry on the Compute Engine page with key compute/zone and value europeג"€west1ג"€d.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 139: The core business of your company is to rent out construction equipment at large scale. All the equipment that is being rented out has been
+          equipped with multiple sensors that send event information every few seconds. These signals can vary from engine status, distance traveled, fuel
+          level, and more. Customers are billed based on the consumption monitored by these sensors. You expect high throughput ג "€up to thousands of
+          events per hour per device ג "€and need to retrieve consistent data based on the time of the event. Storing and retrieving individual signals should
+          be atomic. What should you do?
+          </p> </b>
+        <input type="radio" name="question139" value="A">A) Create a file in Cloud Storage per device and append new data to that file.
+        <br><br>
+        <input type="radio" name="question139" value="B">B) Create a file in Cloud Filestore per device and append new data to that file.
+        <br><br>
+        <input type="radio" name="question139" value="C">C) Ingest the data into Datastore. Store data in an entity group based on the device.
+        <br><br>
+        <input type="radio" name="question139" value="D">D) Ingest the data into Cloud Bigtable. Create a row key based on the event timestamp.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 140: You are asked to set up application performance monitoring on Google Cloud projects A, B, and C as a single pane of glass. You want to monitor
+          CPU, memory, and disk. What should you do?</p> </b>
+        <input type="radio" name="question140" value="A">A) Enable API and then share charts from project A, B, and C<br><br>
+        <input type="radio" name="question140" value="B">B) Enable API and then give the metrics.reader role to projects A, B, and C.<br><br>
+        <input type="radio" name="question140" value="C">C) Enable API and then use default dashboards to view all projects in sequence.<br><br>
+        <input type="radio" name="question140" value="D">D) Enable API, create a workspace under project A, and then add projects B and C<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 141: You created several resources in multiple Google Cloud projects. All projects are linked to different billing accounts. To better estimate future
+          charges, you want to have a single visual representation of all costs incurred. You want to include new cost data as soon as possible. What should
+          you do?
+          </p> </b>
+        <input type="radio" name="question141" value="A">A) Configure Billing Data Export to BigQuery and visualize the data in Data Studio.
+        <br><br>
+        <input type="radio" name="question141" value="B">B) Visit the Cost Table page to get a CSV export and visualize it using Data Studio.
+        <br><br>
+        <input type="radio" name="question141" value="C">C) Fill all resources in the Pricing Calculator to get an estimate of the monthly cost.
+        <br><br>
+        <input type="radio" name="question141" value="D">D) Use the Reports view in the Cloud Billing Console to view the desired cost information.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 142: Your company has workloads running on Compute Engine and on-premises. The Google Cloud Virtual Private Cloud (VPC) is connected to your
+          WAN over a
+          Virtual Private Network (VPN). You need to deploy a new Compute Engine instance and ensure that no public Internet traffic can be routed to it.
+          What should you do?
+          </p> </b>
+        <input type="radio" name="question142" value="A">A) Create the instance without a public IP address<br><br>
+        <input type="radio" name="question142" value="B">B) Create the instance with Private Google Access enabled<br><br>
+        <input type="radio" name="question142" value="C">C) Create a deny-all egress firewall rule on the VPC network<br><br>
+        <input type="radio" name="question142" value="D">D) Create a route on the VPC to route all traffic to the instance over the VPN tunnel.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 143: Your team maintains the infrastructure for your organization. The current infrastructure requires changes. You need to share your proposed
+          changes with the rest of the team. You want to follow Google's recommended best practices. What should you do?</p> </b>
+        <input type="radio" name="question143" value="A">A) Use Deployment Manager templates to describe the proposed changes and store them in a Cloud Storage bucket.<br><br>
+        <input type="radio" name="question143" value="B">B) Use Deployment Manager templates to describe the proposed changes and store them in Cloud Source Repositories.
+        <br><br>
+        <input type="radio" name="question143" value="C">C) Apply the changes in a development environment, run gcloud compute instances list, and then save the output in a shared Storage bucket.<br><br>
+        <input type="radio" name="question143" value="D">D) Apply the changes in a development environment, run gcloud compute instances list, and then save the output in Cloud Source
+        Repositories.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 144: You have a Compute Engine instance hosting an application used between 9 AM and 6 PM on weekdays. You want to back up this instance daily
+          for disaster recovery purposes. You want to keep the backups for 30 days. You want the Google-recommended solution with the least
+          management overhead and the least number of services. What should you do?</p> </b>
+        <input type="radio" name="question144" value="A">A) 1. Update your instances' metadata to add the following value: snapshotג"€schedule: 0 1 * * * 2. Update your instances' metadata to add
+        the following value: snapshotג"€retention: 30
+        <br><br>
+        <input type="radio" name="question144" value="B">B) 1. In the Cloud Console, go to the Compute Engine Disks page and select your instance's disk. 2. In the Snapshot Schedule section, select
+        Create Schedule and configure the following parameters: - Schedule frequency: Daily - Start time: 1:00 AM 2:00 "€ג AM - Autodelete snapshots
+        after: 30 days<br><br>
+        <input type="radio" name="question144" value="C">C) 1. Create a Cloud Function that creates a snapshot of your instance's disk. 2. Create a Cloud Function that deletes snapshots that are older
+        than 30 days. 3. Use Cloud Scheduler to trigger both Cloud Functions daily at 1:00 AM.<br><br>
+        <input type="radio" name="question144" value="D">D) 1. Create a bash script in the instance that copies the content of the disk to Cloud Storage. 2. Create a bash script in the instance that
+        deletes data older than 30 days in the backup Cloud Storage bucket. 3. Configure the instance's crontab to execute these scripts daily at 1:00
+        AM.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 145: Your existing application running in Google Kubernetes Engine (GKE) consists of multiple pods running on four GKE n1ג"€standard2"€ג nodes. You
+          need to deploy additional pods requiring n2ג"€highmem16"€ג nodes without any downtime. What should you do?</p> </b>
+        <input type="radio" name="question145" value="A">A) Use gcloud container clusters upgrade. Deploy the new services<br><br>
+        <input type="radio" name="question145" value="B">B) Create a new Node Pool and specify machine type n2ג"€highmem16"€ג .Deploy the new pods<br><br>
+        <input type="radio" name="question145" value="C">C) Create a new cluster with n2ג"€highmem16"€ג nodes. Redeploy the pods and delete the old cluster.
+        <br><br>
+        <input type="radio" name="question145" value="D">D) Create a new cluster with both n1ג"€standard2"€ג and n2ג"€highmem16"€ג nodes. Redeploy the pods and delete the old cluster.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 146: You have an application that uses Cloud Spanner as a database backend to keep current state information about users. Cloud Bigtable logs all
+          events triggered by users. You export Cloud Spanner data to Cloud Storage during daily backups. One of your analysts asks you to join data from
+          Cloud Spanner and Cloud
+          Bigtable for specific users. You want to complete this ad hoc request as efficiently as possible. What should you do?</p> </b>
+        <input type="radio" name="question146" value="A">A) Create a dataflow job that copies data from Cloud Bigtable and Cloud Storage for specific users<br><br>
+        <input type="radio" name="question146" value="B">B) Create a dataflow job that copies data from Cloud Bigtable and Cloud Spanner for specific users<br><br>
+        <input type="radio" name="question146" value="C">C) Create a Cloud Dataproc cluster that runs a Spark job to extract data from Cloud Bigtable and Cloud Storage for specific users.
+        <br><br>
+        <input type="radio" name="question146" value="D">D) Create two separate BigQuery external tables on Cloud Storage and Cloud Bigtable. Use the BigQuery console to join these tables through
+        user fields, and apply appropriate filters.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 147: You are hosting an application from Compute Engine virtual machines (VMs) in usג"€central1ג"€a. You want to adjust your design to support the
+          failure of a single
+          Compute Engine zone, eliminate downtime, and minimize cost. What should you do?</p> </b>
+        <input type="radio" name="question147" value="A">A) ג "€Create Compute Engine resources in usג"€central1ג"€b. ג "€Balance the load across both usג"€central1ג"€a and usג"€central1ג"€b.<br><br>
+        <input type="radio" name="question147" value="B">B) ג "€Create a Managed Instance Group and specify usג"€central1ג"€a as the zone. ג "€Configure the Health Check with a short Health
+        Interval.
+        <br><br>
+        <input type="radio" name="question147" value="C">C) ג "€Create an HTTP(S) Load Balancer. ג "€Create one or more global forwarding rules to direct traffic to your VMs.
+        <br><br>
+        <input type="radio" name="question147" value="D">D) ג "€Perform regular backups of your application. ג "€Create a Cloud Monitoring Alert and be notified if your application becomes
+        unavailable. ג "€Restore from backups when notified.<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 148: A colleague handed over a Google Cloud Platform project for you to maintain. As part of a security checkup, you want to review who has been
+          granted the Project
+          Owner role. What should you do?</p> </b>
+        <input type="radio" name="question148" value="A">A) In the console, validate which SSH keys have been stored as project-wide keys.
+        <br><br>
+        <input type="radio" name="question148" value="B">B) Navigate to Identity-Aware Proxy and check the permissions for these resources.
+        <br><br>
+        <input type="radio" name="question148" value="C">C) Enable Audit Logs on the IAM & admin page for all resources, and validate the results.
+        <br><br>
+        <input type="radio" name="question148" value="D">D) Use the command gcloud projects getג"€iamג"€policy to view the current role assignments<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 149: You are running multiple VPC-native Google Kubernetes Engine clusters in the same subnet. The IPs available for the nodes are exhausted, and
+          you want to ensure that the clusters can grow in nodes when needed. What should you do?</p> </b>
+        <input type="radio" name="question149" value="A">A) Create a new subnet in the same region as the subnet being used.
+        <br><br>
+        <input type="radio" name="question149" value="B">B) Add an alias IP range to the subnet used by the GKE clusters.
+        <br><br>
+        <input type="radio" name="question149" value="C">C) Create a new VPC, and set up VPC peering with the existing VPC.
+        <br><br>
+        <input type="radio" name="question149" value="D">D) Expand the CIDR range of the relevant subnet for the cluster<br><br>
+        <div class="result"></div>
+      </div>
+      <div class="question-container">
+        <b><p>Question 150: You have a batch workload that runs every night and uses a large number of virtual machines (VMs). It is fault-tolerant and can tolerate some of
+          the VMs being terminated. The current cost of VMs is too high. What should you do?</p> </b>
+        <input type="radio" name="question150" value="A">A) Run a test using simulated maintenance events. If the test is successful, use preemptible N1 Standard VMs when running future jobs<br><br>
+        <input type="radio" name="question150" value="B">B) Run a test using simulated maintenance events. If the test is successful, use N1 Standard VMs when running future jobs<br><br>
+        <input type="radio" name="question150" value="C">C)  Run a test using a managed instance group. If the test is successful, use N1 Standard VMs in the managed instance group when running
+        future jobs<br><br>
+        <input type="radio" name="question150" value="D">D). Run a test using N1 standard VMs instead of N2. If the test is successful, use N1 Standard VMs when running future jobs.
+        <br><br>
+        <div class="result"></div>
+      </div>
+      <!-- <div class="question-container">
+        <b><p>Question 15: </p> </b>
+        <input type="radio" name="question15" value="A">A) <br><br>
+        <input type="radio" name="question15" value="B">B) <br><br>
+        <input type="radio" name="question15" value="C">C) <br><br>
+        <input type="radio" name="question15" value="D">D) <br><br>
+        <div class="result"></div>
+      </div> -->
+           
+            
+            
+            
+            <input style="cursor: pointer;" class="submit-btn" type="submit" value="Submit">
+            <!-- <button  style="padding: 16px 30px; background-color: black;  font-weight: bold; "><a href="page2.html" style="text-decoration: none;color: white;">Que 51 to 100</a></button> -->
+           
+          </form>
+      
+    </div>
+
+    <div class="next-prev-btn" style="margin: 20px 0px;">
+
+      <div class="prev-btn" >
+        
+        <button  style="padding: 16px 30px; background-color: black;  font-weight: bold; color: white; cursor: pointer;" onclick="window.location.href = 'index.html';"> Que 1 to 50</a></button>
+        <button  style="padding: 16px 30px; background-color: black;  font-weight: bold; color: white; cursor: pointer;" onclick="window.location.href = 'page2.html';"> Que 51 to 100</a></button>
+    </div>
+    <div class="next-btn" >
+     
+      <!-- <button  style="padding: 16px 30px; background-color: black;  font-weight: bold; color: white; cursor: pointer;" onclick="window.location.href = 'page2.html';">Que 51 to 100</a></button> -->
+  </div>
+
+    </div>
+
+    <p class="correct"></p>
+    <p class="incorrect"></p>
+  </body>
+  <script>
+    const form = document.querySelector("#exam-form");
+
+    const correctAnswers = {
+        'question101': "D",
+        'question102': "D",
+        'question103': "D",
+        'question104': "C",
+        'question105': "B",
+        'question106': "D",
+        'question107': "B",
+        'question108': "A",
+        'question109': "A",
+        'question110': "A",
+        'question111': "C",
+        'question112': "B",
+        'question113': "B",
+        'question114': "B",
+        'question115': "A",
+        'question116': "D",
+        'question117': "C",
+        'question118': "A",
+        'question119': "B",
+        'question120': "A",
+        'question121': "A",
+        'question122': "B",
+        'question123': "B",
+        'question124': "D",
+        'question125': "C",
+        'question126': "A",
+        'question127': "C",
+        'question128': "C",
+        'question129': "C",
+        'question130': "B",
+        'question131': "B",
+        'question132': "D",
+        'question133': "B",
+        'question134': "B",
+        'question135': "A",
+        'question136': "C",
+        'question137': "A",
+        'question138': "A",
+        'question139': "D",
+        'question140': "D",
+        'question141': "A",
+        'question142': "A",
+        'question143': "B",
+        'question144': "B",
+        'question145': "B",
+        'question146': "D",
+        'question147': "A",
+        'question148': "D",
+        'question149': "D",
+        'question150': "A"
+
+    };
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      let correct = 0;
+      let incorrect = 0;
+
+      const questionContainers = document.querySelectorAll(
+        ".question-container"
+      );
+      questionContainers.forEach((container) => {
+        const question = container.querySelector("input[type='radio']:checked");
+        if(question==null){
+      alert("Please Attempt All Questions ")
+    }
+        const key = question.name;
+        const questionNumber = container
+          .querySelector("p")
+          .textContent.split(" ")[1];
+        const resultContainer = container.querySelector(".result");
+
+        if (!question) {
+          resultContainer.innerHTML = `<p style="color: red;">Please select an answer for question ${questionNumber}</p>`;
+        } else if (question.value == correctAnswers[key.toString()]) {
+          resultContainer.innerHTML = `<p style="color: green;">Correct!</p>`;
+          correct++;
+        } else {
+          resultContainer.innerHTML =
+            '<p style="color: red;">Incorrect. The correct answer was ' +
+            correctAnswers[key.toString()] +
+            "</p>";
+          incorrect++;
+        }
+      });
+
+      document.querySelector(".correct").innerHTML = `Correct: ${correct}`;
+      document.querySelector(
+        ".incorrect"
+      ).innerHTML = `Incorrect: ${incorrect}`;
+    });
+  </script>
+</html>
